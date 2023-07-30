@@ -51,7 +51,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls' # Python module where the root URL patterns of your application are defined.
 
-TEMPLATES = [
+TEMPLATES = [ 
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
