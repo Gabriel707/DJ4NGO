@@ -19,7 +19,7 @@ class Post(models.Model):
 
     # Defining metadata / definindo metadado para o model
     class Meta: 
-        order = ['-publish']  
+        ordering = ['-publish']  
         indexes = [
             models.Index(fields=['-publish']),
         ]
