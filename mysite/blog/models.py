@@ -10,9 +10,9 @@ class Post(models.Model):
 
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250) # short label
-    author = models.ForeignKey(User,
+    author = models.ForeignKey(User,                        # Create relationship between users and posts
                                on_delete=models.CASCADE,
-                               related_name="blog_posts")
+                               related_name="blog_posts") 
 
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
